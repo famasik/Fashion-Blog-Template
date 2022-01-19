@@ -1,0 +1,132 @@
+body {
+  width: 1920px;
+}
+li {
+  display: inline-block;
+}
+@import url(https://fonts.googleapis.com/css?family=Lora);
+
+h2 {
+  font-family: monospace;
+  color: #606060;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  float: right;
+}
+a {
+  text-decoration: none;
+  font-family: "Lora", serif;
+  transition: 0.5s linear;
+}
+i {
+  margin-right: 10px;
+}
+nav {
+  display: block;
+  width: 660px;
+  margin: 0;
+  margin-right: 81px;
+  padding: 0;
+}
+
+.top-menu ul {
+  list-style: none;
+  padding: 0;
+
+  /* background: #e4efd1; */
+  position: relative;
+}
+.top-menu li {
+  display: inline-block;
+}
+.top-menu a {
+  padding: 1em;
+  display: block;
+  position: relative;
+  font-family: PT Serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #171717;
+}
+.top-menu a:hover {
+  color: #c9a96e;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+h1 {
+  margin: 0;
+  text-align: center;
+  font-family: PT Serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 33px;
+  letter-spacing: 2.5px;
+
+  color: #171717;
+}
+.home {
+  font-family: PT Serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #c9a96e;
+}
+
+.header-logo {
+  padding-top: 4px;
+  box-shadow: 0 0 3px #c9a96e inset;
+  mix-blend-mode: normal;
+  /* opacity: 0.35; */
+}
+.main-hero {
+  position: relative;
+}
+.text-block {
+  position: absolute;
+  bottom: 59px;
+  left: 375px;
+  color: white;
+}
+.hero-info {
+  font-family: PT Serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 50px;
+  color: #ffffff;
+}
+.hero-box {
+  width: 560px;
+  padding: 0;
+}
+
+h4 {
+  margin: 0;
+}
+
+.title-hero {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.time-hero {
+  font-family: PT Serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #ffffff;
+}
