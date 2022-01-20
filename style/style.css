@@ -17,7 +17,7 @@ ul {
 }
 a {
   text-decoration: none;
-  font-family: "Lora", serif;
+  font-family: 'Lora', serif;
   transition: 0.5s linear;
 }
 i {
@@ -130,4 +130,7 @@ h4 {
   font-size: 14px;
   line-height: 19px;
   color: #ffffff;
+}
+p {
+  font-size: 20px;
 }
