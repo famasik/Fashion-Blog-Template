@@ -17,7 +17,7 @@ ul {
 }
 a {
   text-decoration: none;
-  font-family: "Lora", serif;
+  font-family: 'Lora', serif;
   transition: 0.5s linear;
 }
 i {
@@ -80,12 +80,6 @@ h1 {
   color: #c9a96e;
 }
 
-.header-logo {
-  padding-top: 4px;
-  box-shadow: 0 0 3px #c9a96e inset;
-  mix-blend-mode: normal;
-  /* opacity: 0.35; */
-}
 .main-hero {
   position: relative;
 }
@@ -129,4 +123,13 @@ h4 {
   font-size: 14px;
   line-height: 19px;
   color: #ffffff;
+}
+.header-logo::before {
+  content: '';
+  position: absolute;
+  top: 29px;
+  width: 125px;
+  height: 6px;
+  background: #ece1cc;
+  z-index: -1;
 }
