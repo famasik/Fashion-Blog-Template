@@ -82,6 +82,7 @@ h1 {
 
 .header-logo {
   padding-top: 4px;
+  margin-left: 40px;
   box-shadow: 0 0 3px #c9a96e inset;
   mix-blend-mode: normal;
   /* opacity: 0.35; */
