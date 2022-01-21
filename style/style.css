@@ -1,28 +1,16 @@
 body {
   width: 1920px;
 }
-li {
-  display: inline-block;
-}
-@import url(https://fonts.googleapis.com/css?family=Lora);
 
 h2 {
   font-family: monospace;
   color: #606060;
 }
-ul {
-  list-style: none;
-  margin: 0;
-  float: right;
-}
-a {
-  text-decoration: none;
-  font-family: "Lora", serif;
-  transition: 0.5s linear;
-}
+
 i {
   margin-right: 10px;
 }
+
 nav {
   display: block;
   width: 660px;
@@ -34,13 +22,15 @@ nav {
 .top-menu ul {
   list-style: none;
   padding: 0;
-
-  /* background: #e4efd1; */
+  margin: 0;
+  float: right;
   position: relative;
 }
+
 .top-menu li {
   display: inline-block;
 }
+
 .top-menu a {
   padding: 1em;
   display: block;
@@ -51,10 +41,13 @@ nav {
   font-size: 14px;
   line-height: 19px;
   color: #171717;
+  text-decoration: none;
 }
+
 .top-menu a:hover {
   color: #c9a96e;
 }
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -68,7 +61,6 @@ h1 {
   font-size: 25px;
   line-height: 33px;
   letter-spacing: 2.5px;
-
   color: #171717;
 }
 .home {
@@ -84,12 +76,14 @@ h1 {
   position: relative;
   margin-bottom: 60px;
 }
+
 .text-block {
   position: absolute;
   bottom: 59px;
   left: 375px;
   color: white;
 }
+
 .hero-info {
   font-family: PT Serif;
   font-style: normal;
@@ -98,6 +92,7 @@ h1 {
   line-height: 50px;
   color: #ffffff;
 }
+
 .hero-box {
   width: 560px;
   padding: 0;
@@ -125,12 +120,13 @@ h2 {
   line-height: 19px;
   color: #ffffff;
 }
+
 .header-logo {
   margin-left: 80px;
 }
 
 .header-logo::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 29px;
   width: 125px;
@@ -138,12 +134,15 @@ h2 {
   background: #ece1cc;
   z-index: -1;
 }
+
+/* main-content */
 .main-content {
   display: inline-flex;
   padding-left: 375px;
 }
 .posts {
-  width: 820px;
+  width: 770px;
+  font-size: 0%;
 }
 .post {
   display: inline-block;
@@ -151,6 +150,14 @@ h2 {
   width: 370px;
   margin: 0 30px 30px 0;
 }
+
+.post2 {
+  display: inline-block;
+  height: 411px;
+  width: 370px;
+  margin: 0 0 30px 0;
+}
+
 .post-photo {
   margin-bottom: 15px;
 }
@@ -166,9 +173,10 @@ h2 {
   text-transform: uppercase;
   color: #c9a96e;
 }
+
 .post-discription {
-  margin: 4px 0;
-  padding: 0 42px 0 42px;
+  margin: 4px 0 10px 0;
+  padding: 0 42px 0 43px;
   font-family: PT Serif;
   font-style: normal;
   font-weight: normal;
@@ -194,6 +202,61 @@ h2 {
   line-height: 16px;
   color: #b1b1b1;
 }
+
+.big-post {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  height: 561px;
+}
+
+.big-post-time {
+  margin: 0;
+  font-family: PT Sans;
+  font-style: regular;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #c9a96e;
+  padding: 30px 0 0 30px;
+}
+
+.post-discription1 {
+  margin: 6px 0 11px 0;
+  padding: 0 0 0 31px;
+  font-family: PT Serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  color: #171717;
+}
+
+.post-date1 {
+  padding: 0 0 0 30px;
+  font-family: PT Serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #666666;
+}
+
+.padding2 {
+  padding: 0 8px 0 8px;
+}
+
+.under-text {
+  font-family: PT Sans;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 24px;
+  line-height: 132%;
+  color: #666666;
+  margin-top: 14px;
+  padding: 0 126px 25px 30px;
+}
+
+/* sidebar */
 
 .sidebar {
   margin-left: 130px;
