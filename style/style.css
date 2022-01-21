@@ -149,6 +149,7 @@ h2 {
   height: 411px;
   width: 370px;
   margin: 0 30px 30px 0;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.17);
 }
 
 .post2 {
@@ -156,6 +157,7 @@ h2 {
   height: 411px;
   width: 370px;
   margin: 0 0 30px 0;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.17);
 }
 
 .post-photo {
@@ -205,7 +207,7 @@ h2 {
 
 .big-post {
   margin-top: 60px;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
   height: 561px;
 }
 
@@ -243,6 +245,10 @@ h2 {
 
 .padding2 {
   padding: 0 8px 0 8px;
+}
+
+.padding3 {
+  padding-right: 8px;
 }
 
 .under-text {
