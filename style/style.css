@@ -304,3 +304,60 @@ h2 {
 .footer-menu a:hover {
   color: #c9a96e;
 }
+
+.header-logo1::before {
+  content: '';
+  position: absolute;
+  top: 3796px;
+  width: 124px;
+  height: 6px;
+  background: #ece1cc;
+  z-index: -1;
+}
+
+.bottom-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bottom-menu li {
+  display: inline-block;
+}
+
+.bottom-menu a:hover {
+  color: #c9a96e;
+}
+
+.bottom-menu a {
+  padding: 1em;
+  display: block;
+  position: relative;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #666666;
+  text-decoration: none;
+}
+
+.bottom-menu {
+  display: block;
+  margin: 29px 0 40px 0;
+  padding-left: 433px;
+}
+hr {
+  color: #e5e5e5;
+  margin-bottom: 30px;
+}
+
+.bottom-text {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #666666;
+  margin-left: 476px;
+}
