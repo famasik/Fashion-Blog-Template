@@ -443,17 +443,17 @@ em {
 
 /* footer */
 .footer {
-  margin: 99px 367px 31px 383px;
+  margin: 99px 375px 31px 375px;
   width: 1170px;
 }
 .footer-line {
-  margin: 0 521px 46px 521px;
+  margin: 0 521px 60px 521px;
 }
 
 .footer-line::before {
   content: "";
   position: absolute;
-  top: 3796px;
+  top: 4083px;
   width: 124px;
   height: 6px;
   background: #ece1cc;
@@ -461,27 +461,33 @@ em {
 }
 
 .footer-top-menu {
+  display: block;
+  margin: 0 408px;
+  padding: 5px;
+  width: 353px;
+}
+
+.footer-top-menu ul {
+  padding: 0;
+  margin: 0;
+  text-align: center;
   display: flex;
-  margin: 0 433px;
+  justify-content: space-between;
 }
 
 .footer-top-menu li {
-  display: inline-block;
-}
-.footer-top-menu ul {
   padding: 0;
+  margin: 0;
+  display: inline-block;
+  padding-inline-start: 0;
 }
-
 .footer-top-menu a {
-  padding: 1em;
-  display: block;
-  position: relative;
-  font-family: PT Serif;
+  font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 19px;
-  color: #171717;
+  line-height: 18px;
+  color: #666666;
   text-decoration: none;
 }
 
@@ -489,40 +495,8 @@ em {
   color: #c9a96e;
 }
 
-.footer-fa-position {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.footer-menu-icons {
-  width: 304px;
-  height: 34px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  /* margin-right: 20px; */
-  border: 1px solid;
-  text-decoration: none;
-}
-
-.fa {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  text-decoration: none;
-  width: 34px;
-  height: 34px;
-  text-align: center;
-  /* vertical-align: middle; */
-  border-radius: 50%;
-  border: 1px solid;
-}
-
-.fa:hover {
-  opacity: 0.7;
-  background: #c9a96e;
+.footer-top-menu a:hover {
+  color: #c9a96e;
 }
 
 .footer-text {
@@ -533,4 +507,44 @@ em {
   line-height: 18px;
   color: #666666;
   margin-left: 476px;
+}
+
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+.socialbtns,
+.socialbtns ul {
+  margin: 0;
+  padding: 0;
+}
+
+.socialbtns li {
+  margin: 0;
+  padding: 30px 10px;
+}
+.socialbtns li {
+  list-style: none outside none;
+  display: inline-block;
+}
+
+.socialbtns .fa {
+  width: 34px;
+  height: 24px;
+  color: #666666;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  padding-top: 9px;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -o-border-radius: 17px;
+}
+
+.socialbtns .fa:hover {
+  color: #ffffff;
+  background-color: #c9a96e;
 }
