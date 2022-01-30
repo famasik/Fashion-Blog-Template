@@ -4,13 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="wispanh=device-wispanh, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=PT+Serif:wght@400;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const slider = new ChiefSlider('.slider', {
+                loop: true
+            });
+        });
+    </script>
     <title>Document</title>
 </head>
 
@@ -30,7 +38,7 @@
     </header>
 
     <div class="main-hero">
-        <img src="img/hero.png" alt="my hero" width="100%">
+        <img src="img/hero.png" alt="my hero" wispanh="100%">
         <div class="text-block">
             <p class="title-hero">Vehicle</p>
             <div class="hero-box">
@@ -155,7 +163,7 @@
 
         <sidebar class="sidebar">
             <div class="sidebar__author">
-                <h4 class="sidebar__title1">About the author</h4>
+                <h4 class="sidebar__author__title">About the author</h4>
                 <img src="img/sidebar1.png" alt="sidebar1">
                 <h4 class="sidebar__name">Kate Willems</h4>
                 <p class="sidebar__topik">Food & cooking bloger</p>
@@ -165,22 +173,22 @@
             </div>
 
             <aside class="sidebar__posts">
-                <h4 class="sidebar__title">Featured posts</h4>
+                <h4 class="sidebar__posts__title">Featured posts</h4>
                 <div class="sidebar__block">
-                    <img src="img/sidebar2.png" alt="sidebar2">
+                    <img src="img/sidebar2.png" class="siderbar__post__image" alt="sidebar2">
                     <p class="sidebar__ending">jeans</p>
                     <h3 class="sidebar__story">One of Saturn's largest rings may be newer than anyone</h3>
                     <h4 class="sidebar__date">June 6, 2019 <span class="sidebar__tag_by">By</span> Rickie Baroch</h4>
                 </div>
                 <div class="sidebar__block">
-                    <img src="img/sidebar3.png" alt="sidebar3">
+                    <img src="img/sidebar3.png" class="siderbar__post__image" alt="sidebar3">
                     <p class="sidebar__ending">city</p>
                     <h3 class="sidebar__story">One of Saturn's largest rings may be newer than anyone</h3>
                     <h4 class="sidebar__date">June 6, 2019 <span class="sidebar__tag_by">By</span> Rickie Baroch</h4>
                 </div>
 
                 <div class="sidebar__block">
-                    <img src="img/sidebar4.png" alt="sidebar4">
+                    <img src="img/sidebar4.png" class="siderbar__post__image" alt="sidebar4">
                     <p class="sidebar__ending">photography</p>
                     <h3 class="sidebar__story">One of Saturn's largest rings may be newer than anyone</h3>
                     <h4 class="sidebar__date">June 6, 2019 <span class="sidebar__tag_by">By</span> Rickie Baroch</h4>
@@ -188,86 +196,166 @@
             </aside>
 
             <div class="sidebar__categories">
-                <h4 class="sidebar__title">Categories</h4>
+                <div class="sidebar__categories__title_box">
+                    <h4 class="sidebar__categories__title">Categories</h4>
+                </div>
                 <ul class="sidebar__list">
-                    <li><span>Fashion</span> <em>&#40;23&#41;</em></li>
-                    <li><span>Style & clothes</span> <em>&#40;7&#41;</em></li>
-                    <li><span>Minimalism</span> <em>&#40;16&#41;</em></li>
-                    <li><span>Black & White</span> <em>&#40;5&#41;</em></li>
-                    <li><span>Modern clothes</span> <em>&#40;12&#41;</em></li>
+
+                    <div class="sidebar__list_box">
+                        <li><span>Fashion</span> <em>&#40;23&#41;</em></li>
+                    </div>
+                    <div class="sidebar__list_box">
+                        <li><span>Style & clothes</span> <em>&#40;7&#41;</em></li>
+                    </div>
+                    <div class="sidebar__list_box">
+                        <li><span>Minimalism</span> <em>&#40;16&#41;</em></li>
+                    </div>
+                    <div class="sidebar__list_box">
+                        <li><span>Black & White</span> <em>&#40;5&#41;</em></li>
+                    </div>
+                    <div class="sidebar__list_box">
+                        <li><span>Modern clothes</span> <em>&#40;12&#41;</em></li>
+                    </div>
                 </ul>
 
             </div>
 
             <div class="sidebar__media">
-                <h4 class="sidebar__title">Social media</h4>
-                <div class="sidebar__block">
-                    <div class="sidebar__media1">
-                        <img src="img/Path1.png" alt="facebook">
-                        <p>32k<br>likes</p>
-                    </div>
+                <h4 class="sidebar__media__title">Social media</h4>
+                <div class="sidebar__media__block">
+                    <ul class="sidebar__media__list">
 
-                    <div class="sidebar__media1">
-                        <img src="img/Path2.png" alt="facebook">
-                        <p>32k<br>likes</p>
-                    </div>
-                    <div class="sidebar__media1">
-                        <img src="img/Path3.png" alt="facebook">
-                        <p>32k<br>likes</p>
-                    </div>
-                    <div class="sidebar__media1">
-                        <img src="img/Path4.png" alt="facebook">
-                        <p>32k<br>likes</p>
-                    </div>
+                        <li>
+                            <div class="sidebar__media__icon">
+                                <img src="img/Path1.png" alt="facebook">
+                                <p>32k<br>likes</p>
+                            </div>
+                        </li>
 
-                    <div class="sidebar__media1">
-                        <img src="img/Path5.png" alt="facebook">
-                        <p>32k<br>likes</p>
-                    </div>
+                        <li>
+                            <div class="sidebar__media__icon">
+                                <img src="img/Path2.png" alt="facebook">
+                                <p>814<br>followers</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="sidebar__media__icon">
+                                <img src="img/Path3.png" alt="facebook">
+                                <p>165<br>followers</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="sidebar__media__icon">
+                                <img src="img/Path4.png" alt="facebook">
+                                <p>6k<br>followers</p>
+                            </div>
+                        </li>
 
-                    <div class="sidebar__media1">
-                        <img src="img/Path6.png" alt="facebook">
-                        <p>32k<br>likes</p>
-                    </div>
+                        <li>
+                            <div class="sidebar__media__icon">
+                                <img src="img/Path5.png" alt="facebook">
+                                <p>130k<br>followers</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="sidebar__media__icon">
+                                <img src="img/Path6.png" alt="facebook">
+                                <p>37k<br>followers</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="sidebar__media__icon">
+                                <img src="img/Path7.png" alt="facebook">
+                                <p>854k<br>followers</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="sidebar__media__icon">
+                                <img src="img/Path8.png" alt="facebook">
+                                <p>52k<br>subscribers</p>
+                            </div>
+                        </li>
 
-                    <div class="sidebar__media1">
-                        <img src="img/Path7.png" alt="facebook">
-                        <p>32k<br>likes</p>
-                    </div>
+                        <li>
+                            <div class="sidebar__media__icon">
+                                <img src="img/Path9.png" alt="facebook">
+                                <p>642<br>followers</p>
+                            </div>
+                        </li>
+                    </ul>
 
-                    <div class="sidebar__media1">
-                        <img src="img/Path8.png" alt="facebook">
-                        <p>32k<br>likes</p>
-                    </div>
-
-                    <div class="sidebar__media1">
-                        <img src="img/Path9.png" alt="facebook">
-                        <p>32k<br>likes</p>
-                    </div>
                 </div>
             </div>
 
             <div class="sidebar__tags">
-                <h4 class="sidebar__title">Tags</h4>
-                <div class="grid">
-                    <dt>Business</dt>
-                    <dt>Freelance</dt>
-                    <dt>Money</dt>
-                    <dt>Experience</dt>
-                    <dt>Lifestyle</dt>
-                    <dt>SEO</dt>
-                    <dt>Wordpress</dt>
-                    <dt>Marketing</dt>
-                    <dt>UX</dt>
-                    <dt>Modern</dt>
-                    <dt>Success</dt>
-                    <dt>Nature</dt>
+                <h4 class="sidebar__tags__title">Tags</h4>
+                <div class="sidebar__references">
+                    <div>Business</div>
+                    <div>Freelance</div>
+                    <div>Money</div>
+                    <div>Experience</div>
+                    <div>Lifestyle</div>
+                    <div>SEO</div>
+                    <div>Wordpress</div>
+                    <div>Marketing</div>
+                    <div>UX</div>
+                    <div>Modern</div>
+                    <div>Success</div>
+                    <div>Nature</div>
                 </div>
             </div>
         </sidebar>
     </div>
 
     <div class="footer-instagram">
+        <h3 class="footer-instagram-text">Follow our @instagram_name</h3>
+        <div class="container">
+
+            <div class="slider">
+                <div class="slider__wrapper">
+                    <div class="slider__items">
+
+                        <!-- Контент 1 слайда -->
+                        <div class="slider__item">
+                            <img src="img/slide 1.png" class="slider__photo" alt="slide 1">
+                        </div>
+
+                        <!-- Контент 2 слайда -->
+                        <div class="slider__item">
+                            <img src="img/slide 2.png" class="slider__photo" alt="slide 2">
+                        </div>
+
+                        <!-- Контент 3 слайда -->
+                        <div class="slider__item">
+                            <img src="img/slide 3.png" class="slider__photo" alt="slide 3">
+                        </div>
+
+                        <!-- Контент 4 слайда -->
+                        <div class="slider__item">
+                            <img src="img/slide 4.png" class="slider__photo" alt="slide 4">
+                        </div>
+
+                        <!-- Контент 5 слайда -->
+                        <div class="slider__item">
+                            <img src="img/slide 5.png" class="slider__photo" alt="slide 5">
+                        </div>
+                        <!-- Контент 6 слайда -->
+                        <div class="slider__item">
+                            <img src="img/slide 6.png" class="slider__photo" alt="slide 6">
+                        </div>
+
+                        <!-- Контент 7 слайда -->
+                        <div class="slider__item">
+                            <img src="img/slide 7.png" class="slider__photo" alt="slide 7">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
     </div>
 
     <footer class="footer">
@@ -296,6 +384,8 @@
         <hr>
         <p class="footer-text">@2019 Logwork. All Right Reserved.</p>
     </footer>
+
+    <script defer src="/js/slider.js"></script>
 </body>
 
 </html>
