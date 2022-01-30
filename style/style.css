@@ -5,6 +5,22 @@ body {
 i {
   margin-right: 10px;
 }
+h1 {
+  margin: 0;
+  text-align: center;
+  font-family: PT Serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 33px;
+  letter-spacing: 2.5px;
+  color: #171717;
+}
+h2 {
+  font-family: monospace;
+  color: #606060;
+  margin: 0;
+}
 
 .top-menu {
   display: block;
@@ -13,7 +29,6 @@ i {
   margin-right: 81px;
   padding: 0;
 }
-
 .top-menu ul {
   list-style: none;
   padding: 0;
@@ -21,11 +36,9 @@ i {
   float: right;
   position: relative;
 }
-
 .top-menu li {
   display: inline-block;
 }
-
 .top-menu a {
   padding: 1em;
   display: block;
@@ -38,7 +51,6 @@ i {
   color: #171717;
   text-decoration: none;
 }
-
 .top-menu a:hover {
   color: #c9a96e;
 }
@@ -46,24 +58,6 @@ i {
 .header {
   display: flex;
   justify-content: space-between;
-}
-
-h1 {
-  margin: 0;
-  text-align: center;
-  font-family: PT Serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 25px;
-  line-height: 33px;
-  letter-spacing: 2.5px;
-  color: #171717;
-}
-
-h2 {
-  font-family: monospace;
-  color: #606060;
-  margin: 0;
 }
 
 .home {
@@ -139,7 +133,12 @@ h2 {
   display: inline-flex;
   padding-left: 375px;
 }
-
+.main-content img {
+  transition: 0.5s; /* Время эффекта */
+}
+.main-content img:hover {
+  transform: scale(1.05);
+}
 .posts {
   width: 770px;
   padding: 0;
@@ -446,21 +445,22 @@ em {
 }
 
 .sidebar__references {
+  list-style: none;
+  padding: 0;
   display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
   flex-wrap: wrap;
   flex-direction: row;
-}
-.sidebar__references div {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: space-around;
-  align-items: center;
   justify-content: space-around;
-  margin: 0 16px 10px 16px;
-  /* box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1); */
+}
+.sidebar__tags {
+  height: 220px;
+  width: 270px;
+}
+.sidebar__references li {
+  display: block;
+  padding: 10px;
+  margin: 3px;
+  background: #f8f9fa;
 }
 
 /* Pagination */
@@ -510,6 +510,7 @@ em {
   width: 1170px;
 }
 .footer-line {
+  position: relative;
   margin: 0 521px 60px 521px;
 }
 
@@ -522,7 +523,7 @@ em {
 .footer-line::before {
   content: "";
   position: absolute;
-  top: 4083px;
+  top: 22px;
   width: 124px;
   height: 6px;
   background: #ece1cc;
@@ -624,7 +625,6 @@ a:hover {
 }
 .container {
   max-width: 1920px;
-  /* margin: 0 auto; */
 }
 
 .slider__wrapper {
